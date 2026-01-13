@@ -4,6 +4,25 @@ A Python pipeline for processing and analyzing barcoded sequencing data from poo
 Overview
 Barcoded libraries are widely used in functional genomics screens, CRISPR experiments, and multiplexed sequencing applications. This workflow simulates realistic FASTQ data with sample-specific expression profiles and provides tools for:
 
+This is a simulation study, What we simulated:
+
+1. 50 barcodes mapped to genes
+2. 3 samples with different expression profiles (via Dirichlet distributions)
+3. 3,000 FASTQ reads per sample with realistic structure (header, sequence, quality scores)
+4. Boosted expression for 5 random genes per sample to mimic biological variability
+
+What we built:
+
+1. FASTQ parser
+2. Barcode extraction (from header metadata and sequence matching)
+3. Gene mapping and counting
+3. Visualizations (heatmap, grouped bar chart, stacked bar chart)
+
+Real-world application: This same pipeline would work with actual FASTQ files from CRISPR screens, shRNA libraries, or any barcoded pooled experiment—just swap in real data and a real barcode-gene mapping file.
+
+
+
+
 Barcode identification and extraction from sequencing reads
 Mapping barcodes to gene annotations
 Quantifying gene abundance across samples
