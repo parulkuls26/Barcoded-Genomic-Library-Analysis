@@ -1,0 +1,19 @@
+**Barcoded Genomic Library Analysis**
+
+A Python pipeline for processing and analyzing barcoded sequencing data from pooled genomic libraries. This notebook demonstrates barcode extraction, gene mapping, and visualization of expression patterns across multiple samples.
+Overview
+Barcoded libraries are widely used in functional genomics screens, CRISPR experiments, and multiplexed sequencing applications. This workflow simulates realistic FASTQ data with sample-specific expression profiles and provides tools for:
+
+Barcode identification and extraction from sequencing reads
+Mapping barcodes to gene annotations
+Quantifying gene abundance across samples
+Visualizing differential expression patterns
+
+**Requirements**
+1. numpy
+2. pandas
+3. matplotlib
+4. seaborn
+
+Usage
+Run cells sequentially to generate simulated data, process reads, and produce visualizations including heatmaps and comparative bar charts.
